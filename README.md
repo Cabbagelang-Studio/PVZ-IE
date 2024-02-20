@@ -23,3 +23,15 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 
 ## Why isn't it open source?
 Modified from assembly.
+
+___
+
+# Updated 2/20/2024 *Commit 705fa186ecd87deddd184fae5a636894d238ac14*
+
+- Fixed some bugs
+
+- Increased Cabbage Pults' damage
+
+- Increased all mushroom's damage
+
+- Increased Blovers' sun and recharge time
