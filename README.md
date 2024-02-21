@@ -26,7 +26,7 @@ Modified from assembly.
 
 ___
 
-# Updated 2/20/2024 *Commit 705fa186ecd87deddd184fae5a636894d238ac14*
+# Update 2/20/2024
 
 - Fixed some bugs
 
@@ -35,3 +35,11 @@ ___
 - Increased all mushroom's damage
 
 - Increased Blovers' sun and recharge time
+
+# Update 2/21/2024
+
+- Fixed some bugs
+
+- Changed spawnings
+
+- Changed Strings
