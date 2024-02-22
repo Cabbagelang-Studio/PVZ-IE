@@ -43,3 +43,15 @@ ___
 - Changed spawnings
 
 - Changed Strings
+
+# Update 2/22/2024
+
+- Fixed some bugs
+
+- Changed spawnings
+
+- Changed Strings
+
+- Stronger zombies
+
+- More zombies

@@ -892,8 +892,8 @@ in an uncaring world. Mostly he just forgot it was there in the first place.
 Pole Vaulting Zombie vaults with a pole.
 {SHORTLINE}
 {KEYWORD}Toughness:{STAT} medium {500}
-{KEYWORD}Speed:{STAT} fast, then normal (after jump)
-{KEYWORD}Special:{STAT} jumps the first plant he runs into
+{KEYWORD}Speed:{STAT} fast, then fast (after jump)
+{KEYWORD}Special:{STAT} jumps the plants he runs into
 {SHORTLINE}
 {FLAVOR}Some zombies take it further, aspire more, push themselves beyond the 
 normal into greatness. That's Pole Vaulting Zombie right there. That is so him.
@@ -1518,7 +1518,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v1.3
+IE v1.4
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
