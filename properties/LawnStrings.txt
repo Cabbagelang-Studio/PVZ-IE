@@ -921,7 +921,6 @@ Football Zombie makes the big plays.
 {SHORTLINE}
 {KEYWORD}Toughness:{STAT} very high {1670}
 {KEYWORD}Speed:{STAT} fast
-{KEYMETAL}Weakness:{METAL} magnet-shroom
 {SHORTLINE}
 {FLAVOR}Football Zombie gives 110 percent whenever he's on the field. He's a team player 
 who delivers both offensively and defensively. He has no idea what a football is.
@@ -1518,7 +1517,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v1.5
+IE v1.6
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
