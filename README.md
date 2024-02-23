@@ -55,3 +55,7 @@ ___
 - Stronger zombies
 
 - More zombies
+
+# Update 2/23/2024
+
+- Changed Strings

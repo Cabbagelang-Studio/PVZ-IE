@@ -1051,7 +1051,7 @@ Ladder Zombie climbs over obstacles.
 {SHORTLINE}
 {KEYWORD}Toughness:{STAT} medium {500}
 {KEYWORD}Ladder Toughness:{STAT} medium {500}
-{KEYWORD}Speed:{STAT} fast, then slow (after placing ladder)
+{KEYWORD}Speed:{STAT} fast, then slow (after losing ladder)
 {KEYWORD}Weakness:{STAT} fume-shroom{METAL} and magnet-shroom{KEYWORD}
 {SHORTLINE}
 {FLAVOR}He picked the ladder up for $8.99.
@@ -1518,7 +1518,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v1.4
+IE v1.5
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
