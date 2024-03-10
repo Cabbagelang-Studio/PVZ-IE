@@ -1,0 +1,1872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <Forms>
+    <UDF1 Class="TCEForm" Encoding="Ascii85">3uj/p2nldAU:MM2b.}cxWeIh0Gi32eO*Fu{W?Ph7%{mcIVgA6t9FkwaJfDFzJTs+vgV{,R-8r$KBr]vc4XmEa$Jr,:wWt@+z.2^xpl7CMz]y[i</UDF1>
+    <CETrainer Class="TTrainerForm" Encoding="Ascii85">#g$u76IU3:H)8U-1(a??wJ#-goRO9)#cN.MI!Rbcra(?erOMP!H]xQMY/6,8.ig3jZAa@L#/t;xR;},k*,;q?Z@Z{+sKZs13IaiHqMg:GeQ=@2[GCAKBv2_ZWivb3J@P+S^QtlG(bQQa2trumV!^Z5CutV(aUAbZ8+$(:oCJ[2pxuZv9=/C-0^TdX5=q$tu6UoOgbcJ?Hdk+K:xku+Sb@slOshATR{,TS1Yu6n8aSQ.yvfe7PHmWtw(pnn.7A0lOJk!GX[j]-]2g]nS%o_XU?Du[O0))k%1CAjG^-72OG?hNCOj)4$k2cl#$^-wd%p}A925^OJ)WLFd*JJPB=VGbgd#]+JP__(fAi+f^{()]aAZCli-ac{LUf2UE+_h1g-GYLM^4T2^EY:0co+[*NA/ayp@.zuJfp]e(rB0Wq@!-]RGdt#Y3um8r+HU9_43K(K;o)fQwH1YRBQXqp1zTi)u$vITio=,XD;D$IbPk_dh/%dwaM_P(zv0]e$d*,:bPOXrRB%;=mKblXmxM?$lam*qhr5rE-VTR^$SmQ-94V;[MU@4m,)zrMHiQ_TlUm8bU,I+^?)qEyZ3w;7+DTvK)!a#%{HNYM4ai2IN8SUI#Szs!!tN0#^X8bb9acI(%gM3+Z0R3?2q.QW%QNGmV*n2*HZeY-yMS?hejTJToB}C:,mu7Dlcp,+{tf=dg1w7Z/L),Y*3].!P5s0S2bO0Z?k)Z7?U{7;FB*OaJ{nrWzE{L[Qw@L6mKs)cd5CiuDz/dj=d1I#p43w):%w#z*0iuuJf0gx9-?tx8l@Xs;]+Fo$Z{^^R8)d+ELRt,1z@L#x0M#zP/dwNjR(%sk66#bYO4^zUA^5YbM9/Eh}qQ;KfV)^P5$_mfKz3gAfaJdUt5-lcM4(-+46F;Vt/*Y}NAV-8(3r!0G*1!(_m*o4)ShG@Xpe2LgmOuz]0zOL1mx5OQ/#_Ly6MRewEs5.1q}!+B%gU^9ZV.2v=KWo2(k?t,;F=ur^LEi1%YI{5_Rd*=tfBku6QVNb.Ge;]55oA;uq1i^R#k;Q+G){.g=?7gm{7S2g}[c-:k7H75d0I*^5qXDl.Fean]-YIVXrO]3bE2Co(En(p1Sqv={0JRmj.K[QzoGi8^xxYKf5wSTTQgf0kuoT*!,Zdoi5EYzmAz8p@?HIrT-l9+!6M]rETbqA2rO-2UI+Tbu#v7,GfNa2,SlAOWwJke:%K/!}q+1d:2pXNPSIH=ALE6mTmM51XYADO#5)JJ7Y?CuXx!:]%uP+eC%qQ$4pD-247(ti9q0,kq(I*@{dc12Y@ft}Vh{0ozOe5Y)*W:sxBq{BcnGO]DME$#X?VaQX1Vlc0UC9q-6=h:nGt?^RUt;J3Cj$6VQ{aa}ve10fws=nZLb,UAE]hWGMjLM=-ow];:nek$G:6Mh.(K_F]bFbxl/{O93G%cSl84!i9K-Rx0ueLLi@Z,RWRrz3nUez2QvaD2PfG*KAtbF5?(Tlv6sg3Z1eq=E1=xoXrK+kead{II8NE{I.2TmCAXl)@Q)/a56ARKv7bB:}iWYLDTJm^Os+D29M5RV8)Z(L(ou=(93nOE{tEBjS+2R)V/IC%kK#ntu%z^@]oWn*}jg*^9cS3l.WN^:[Eq;ie0Z@*N-z9t_DN?+)WVi#Y8C.H)M6HP?onCPUE=1=6+U+PO)+_!sI4lu4$U][FQhmJR.{A2!K^i7UmZ,sc93lcZz=$XQbe*m3+/ju4EHIICRv.]DA*p{.JW==bJ[wN$5acs1hGjtzUJQf*1f79%Iv4BWEwf@NnP]4ai1^YT^QAk{)HWax9%TNdDb0I):B)IXF4_XwG%QN(@M)EfshY4qXU6tdJd6EInw:H/D?6Os5c]a1f2ZI6@Aq,JGq%4n$o_U#[Py41CWpht0.ev}]?No;=Y}lFfKAEZsGq?t2=oj.Gk7zI!3(]bk}tSk^a?A+/R1</CETrainer>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>82</ID>
+      <Description>"Faster Newspaper Zombie"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(ty)
+label(next)
+
+newmem:
+originalcode:
+cmp [ecx+24],5
+je tyb
+jne next
+
+tyb:
+cmp [ecx+28],1f
+je ty
+jne next
+
+next:
+fsub dword ptr [esp+08]
+jmp PlantsVsZombies.exe+12AB37
+
+
+ty:
+mov [esp+08],40A00000
+fsub dword ptr [esp+08]
+jmp PlantsVsZombies.exe+12AB37
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+12AB2A:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+12AB2A:
+fsub dword ptr [esp+08]
+jmp PlantsVsZombies.exe+12AB37
+//Alt: db D8 64 24 08 EB 07
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>49</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Strong Cabbage Pults"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp [ebp+24],20
+jne originalcode
+pushad
+mov eax,0E
+call 005AF400
+mov edi,eax
+cmp edi,1
+jg cy
+popad
+mov eax,0
+jmp originalcode
+
+cy:
+cmp edi,2
+jg cv
+popad
+mov eax,1
+jmp originalcode
+cv:
+cmp edi,3
+jg cn
+popad
+mov eax,2
+jmp originalcode
+
+cn:
+cmp edi,4
+jg cm
+popad
+mov eax,3
+jmp originalcode
+
+cm:
+cmp edi,5
+jg cs
+popad
+mov eax,4
+jmp originalcode
+
+cs:
+cmp edi,6
+jg cg
+popad
+mov eax,5
+jmp originalcode
+
+cg:
+cmp edi,7
+jg cj
+popad
+mov eax,6
+jmp originalcode
+
+cj:
+cmp edi,8
+jg ck
+popad
+mov eax,7
+jmp originalcode
+
+ck:
+cmp edi,9
+jg cq
+popad
+mov eax,8
+jmp originalcode
+
+cq:
+cmp edi,0A
+jg cw
+popad
+mov eax,9
+jmp originalcode
+
+cw:
+cmp edi,0B
+jg cr
+popad
+mov eax,0A
+jmp originalcode
+
+cr:
+cmp edi,0C
+jg ct
+popad
+mov eax,0B
+jmp originalcode
+
+ct:
+popad
+mov eax,0C
+jmp originalcode
+
+
+originalcode:
+push eax
+mov eax,[ebp+04]
+push ebx
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+672A5:
+jmp newmem
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>80</Key>
+            <Key>50</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>135</ID>
+      <Description>"Set Boss' HP"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [700300],0
+je originalcode
+cmp [EDI+24],1
+jne originalcode
+mov [EDI+C8],22222
+
+jmp returnhere
+originalcode:
+mov [edi+000000C8],0000010E
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+1227B5:
+jmp newmem
+nop 5
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+1227B5:
+mov [edi+000000C8],0000010E
+//Alt: db C7 87 C8 00 00 00 0E 01 00 00
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>51</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>138</ID>
+      <Description>"Set Boss' Size"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+CMP [EDI+24],1
+jne originalcode
+cmp [700300],1
+jne originalcode
+fld dword ptr [00679a6c]
+originalcode:
+fstp dword ptr [edi+0000011C]
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+1226E2:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+1226E2:
+fstp dword ptr [edi+0000011C]
+//Alt: db D9 9F 1C 01 00 00
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>52</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>139</ID>
+      <Description>"Set Boss' Skin"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp [700300],0
+je originalcode
+call PlantsVsZombies.exe+124370
+push esi
+push PlantsVsZombies.exe+268EC8 { ("anim_hair") }
+mov eax,edi
+call PlantsVsZombies.exe+1331C0
+push esi
+push PlantsVsZombies.exe+25851C { ("anim_head2") }
+mov eax,edi
+call PlantsVsZombies.exe+1331C0
+mov eax,[edi]
+mov ecx,[eax+00000820]
+mov eax,[edi+00000118]
+mov edx,[ecx+08]
+and eax,0000FFFF
+lea ebx,[eax+eax*4]
+shl ebx,05 { 5 }
+add ebx,[edx]
+mov eax,edi
+mov [esp+1C],ebx
+call PlantsVsZombies.exe+12AE40
+test al,al
+je am222
+push PlantsVsZombies.exe+26EB88//anim_walk2
+mov ecx,ebx
+call PlantsVsZombies.exe+73280
+am222:
+push PlantsVsZombies.exe+258500 { ("anim_head1") }
+call PlantsVsZombies.exe+72F30
+lea edi,[eax+eax*2]
+shl edi,05 { 5 }
+add edi,[ebx+58]
+mov ebx,#48 //头_80
+mov eax,[PlantsVsZombies.exe+2A77BC] { (0293D5A8) }
+fldz
+mov ecx,[ebp+08]
+push 00 { 0 }
+sub esp,08 { 8 }
+mov [edi+44],eax
+fst dword ptr [esp+04]
+mov eax,[ecx]
+fstp dword ptr [esp]
+call PlantsVsZombies.exe+53C30
+fld dword ptr [PlantsVsZombies.exe+27967C] { (15.00) }
+push ecx
+fstp dword ptr [esp]
+xor ebx,ebx
+push ebx
+mov esi,eax
+push PlantsVsZombies.exe+268C34 { ("anim_head_idle") }
+xor eax,eax
+call PlantsVsZombies.exe+73BF0
+fldz
+mov edx,[esi+0000009C]
+mov eax,[ebp+08]
+sub esp,08 { 8 }
+fst dword ptr [esp+04]
+add edi,40 { 64 }
+fstp dword ptr [esp]
+mov [eax+00000144],edx
+call PlantsVsZombies.exe+55D0
+fld1
+mov ecx,[esp+24]
+fstp dword ptr [esp+04]
+fld dword ptr [PlantsVsZombies.exe+279378] { (-1.00) }
+sub esp,0C { 12 }
+fstp dword ptr [esp+0C]
+lea esi,[eax+08]
+fld dword ptr [PlantsVsZombies.exe+27953C] { (0.20) }
+mov [ecx+20],ebx
+fstp dword ptr [esp+08]
+fld dword ptr [PlantsVsZombies.exe+279F94] { (-5.00) }
+fstp dword ptr [esp+04]
+fld dword ptr [PlantsVsZombies.exe+279778] { (65.00) }
+fstp dword ptr [esp]
+call PlantsVsZombies.exe+1125D0
+mov eax,[ebp+08]
+add esp,14
+mov [eax+68],00000065
+mov [eax+50],bl
+mov edi,eax
+
+jmp 00523E4E
+originalcode:
+jmp PlantsVsZombies.exe+123E4E
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+123298:
+jmp newmem
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+123298:
+jmp PlantsVsZombies.exe+123E4E
+//Alt: db E9 B1 0B 00 00
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>53</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>141</ID>
+      <Description>"Boss Immunes Mowers"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp dword ptr [esi+24],1
+jne originalcode
+cmp [700300],1
+je PlantsVsZombies.exe+588A1
+originalcode:
+cmp dword ptr [esi+24],19
+je PlantsVsZombies.exe+588A1
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+58832:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+58832:
+cmp dword ptr [esi+24],19
+je PlantsVsZombies.exe+588A1
+//Alt: db 83 7E 24 19 74 69
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>54</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>143</ID>
+      <Description>"Boss Round"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+CMP [edx+5550],#2
+jne exit
+cmp [edx+557c],#2
+JNE exit
+pushad
+mov ecx,[6a9ec0]
+mov ecx,[ecx+768]
+mov ecx,[ecx+160]
+mov eax,2
+push 9//call僵王必须给予特定的列数，不然会出事（行数好像没有要求）
+push 1
+/*
+僵尸种类表：
+00普通 01旗帜 02路障 03撑杆 04铁桶
+05读报 06铁门 07橄榄 08舞王 09伴舞
+0A鸭子 0B潜水 0C冰车 0D雪橇 0E海豚
+0F小丑 10气球 11矿工 12跳跳 13雪人
+14小偷 15扶梯 16篮球 17巨人 18小鬼
+19僵王 1A豌豆 1B坚果 1C辣椒 1D机枪
+       1E窝瓜 1F高坚 20红眼
+*/
+call 0042A0F0
+popad
+MOV [700300],1
+originalcode:
+mov eax,[edx+0000557C]
+
+exit:
+jmp returnhere
+
+"PlantsVsZombies.exe"+268E3:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"PlantsVsZombies.exe"+268E3:
+mov eax,[edx+0000557C]
+//Alt: db 8B 82 7C 55 00 00
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>90</Key>
+            <Key>55</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+D6A5</Description>
+      <AddressString>PlantsVsZombies.exe+D6AC</AddressString>
+      <Before>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>79</Byte>
+        <Byte>14</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>74</Byte>
+        <Byte>F7</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>85</Byte>
+        <Byte>C9</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+126D9F</Description>
+      <AddressString>PlantsVsZombies.exe+126D76</AddressString>
+      <Before>
+        <Byte>3E</Byte>
+        <Byte>83</Byte>
+        <Byte>7F</Byte>
+        <Byte>24</Byte>
+        <Byte>2E</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>27</Byte>
+      </Actual>
+      <After>
+        <Byte>6A</Byte>
+        <Byte>14</Byte>
+        <Byte>B8</Byte>
+        <Byte>20</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+D6A5</Description>
+      <AddressString>PlantsVsZombies.exe+D6AC</AddressString>
+      <Before>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>79</Byte>
+        <Byte>14</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>74</Byte>
+        <Byte>F7</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>85</Byte>
+        <Byte>C9</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+126D9F</Description>
+      <AddressString>PlantsVsZombies.exe+126D76</AddressString>
+      <Before>
+        <Byte>3E</Byte>
+        <Byte>83</Byte>
+        <Byte>7F</Byte>
+        <Byte>24</Byte>
+        <Byte>2E</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>27</Byte>
+      </Actual>
+      <After>
+        <Byte>6A</Byte>
+        <Byte>14</Byte>
+        <Byte>B8</Byte>
+        <Byte>20</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+D6A5</Description>
+      <AddressString>PlantsVsZombies.exe+D6AC</AddressString>
+      <Before>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>79</Byte>
+        <Byte>14</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>74</Byte>
+        <Byte>F7</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>85</Byte>
+        <Byte>C9</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+126D9F</Description>
+      <AddressString>PlantsVsZombies.exe+126D76</AddressString>
+      <Before>
+        <Byte>3E</Byte>
+        <Byte>83</Byte>
+        <Byte>7F</Byte>
+        <Byte>24</Byte>
+        <Byte>2E</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>27</Byte>
+      </Actual>
+      <After>
+        <Byte>6A</Byte>
+        <Byte>14</Byte>
+        <Byte>B8</Byte>
+        <Byte>20</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+D6A5</Description>
+      <AddressString>PlantsVsZombies.exe+D6AC</AddressString>
+      <Before>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>79</Byte>
+        <Byte>14</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>74</Byte>
+        <Byte>F7</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>85</Byte>
+        <Byte>C9</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+126D9F</Description>
+      <AddressString>PlantsVsZombies.exe+126D76</AddressString>
+      <Before>
+        <Byte>3E</Byte>
+        <Byte>83</Byte>
+        <Byte>7F</Byte>
+        <Byte>24</Byte>
+        <Byte>2E</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>27</Byte>
+      </Actual>
+      <After>
+        <Byte>6A</Byte>
+        <Byte>14</Byte>
+        <Byte>B8</Byte>
+        <Byte>20</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+12B245</Description>
+      <AddressString>PlantsVsZombies.exe+12B23C</AddressString>
+      <Before>
+        <Byte>FF</Byte>
+        <Byte>83</Byte>
+        <Byte>7E</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C6</Byte>
+        <Byte>E8</Byte>
+        <Byte>9B</Byte>
+        <Byte>C0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jle PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+1273B4</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>7C</Byte>
+        <Byte>10</Byte>
+        <Byte>5C</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>7E</Byte>
+        <Byte>16</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>F6</Byte>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>C7</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+1273CC</Description>
+      <AddressString>PlantsVsZombies.exe+12738F</AddressString>
+      <Before>
+        <Byte>59</Byte>
+        <Byte>C3</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>48</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>3B</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>0F</Byte>
+        <Byte>8B</Byte>
+        <Byte>91</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 mov eax,[esp+10]</Description>
+      <AddressString>02D0001C</AddressString>
+      <Before>
+        <Byte>7D</Byte>
+        <Byte>08</Byte>
+        <Byte>8B</Byte>
+        <Byte>75</Byte>
+        <Byte>0C</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>44</Byte>
+        <Byte>24</Byte>
+        <Byte>10</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>4D</Byte>
+        <Byte>20</Byte>
+        <Byte>8B</Byte>
+        <Byte>5C</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+66EAF</Description>
+      <AddressString>PlantsVsZombies.exe+66E9C</AddressString>
+      <Before>
+        <Byte>10</Byte>
+        <Byte>00</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1D</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>11</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>F5</Byte>
+        <Byte>E8</Byte>
+        <Byte>7B</Byte>
+        <Byte>88</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 add ebx,19</Description>
+      <AddressString>PlantsVsZombies.exe+5F7EC</AddressString>
+      <Before>
+        <Byte>B8</Byte>
+        <Byte>C8</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>83</Byte>
+        <Byte>C3</Byte>
+        <Byte>19</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>6C</Byte>
+        <Byte>E7</Byte>
+        <Byte>FB</Byte>
+        <Byte>FF</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 add eax,19</Description>
+      <AddressString>PlantsVsZombies.exe+5F7CB</AddressString>
+      <Before>
+        <Byte>46</Byte>
+        <Byte>0C</Byte>
+        <Byte>8B</Byte>
+        <Byte>5E</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>83</Byte>
+        <Byte>C0</Byte>
+        <Byte>19</Byte>
+      </Actual>
+      <After>
+        <Byte>89</Byte>
+        <Byte>44</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+        <Byte>8B</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+64C3B</Description>
+      <AddressString>PlantsVsZombies.exe+64967</AddressString>
+      <Before>
+        <Byte>47</Byte>
+        <Byte>24</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>12</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>85</Byte>
+        <Byte>CE</Byte>
+        <Byte>02</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>8F</Byte>
+        <Byte>9C</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F8E4</Description>
+      <AddressString>PlantsVsZombies.exe+5F8DB</AddressString>
+      <Before>
+        <Byte>EB</Byte>
+        <Byte>44</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1D</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>07</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>FE</Byte>
+        <Byte>FD</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F8D8</Description>
+      <AddressString>PlantsVsZombies.exe+5F8CD</AddressString>
+      <Before>
+        <Byte>F8</Byte>
+        <Byte>12</Byte>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+        <Byte>58</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>09</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>FE</Byte>
+        <Byte>E8</Byte>
+        <Byte>CA</Byte>
+        <Byte>F9</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F90F</Description>
+      <AddressString>PlantsVsZombies.exe+5F8F0</AddressString>
+      <Before>
+        <Byte>EB</Byte>
+        <Byte>24</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1A</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>1D</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>46</Byte>
+        <Byte>3C</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F902</Description>
+      <AddressString>PlantsVsZombies.exe+5F8F8</AddressString>
+      <Before>
+        <Byte>46</Byte>
+        <Byte>3C</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>20</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>46</Byte>
+        <Byte>1C</Byte>
+        <Byte>6A</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jmp PlantsVsZombies.exe+5F91C</Description>
+      <AddressString>PlantsVsZombies.exe+5F8E2</AddressString>
+      <Before>
+        <Byte>E8</Byte>
+        <Byte>FE</Byte>
+        <Byte>FD</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+      </Before>
+      <Actual>
+        <Byte>EB</Byte>
+        <Byte>38</Byte>
+      </Actual>
+      <After>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1C</Byte>
+        <Byte>75</Byte>
+        <Byte>04</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+5F712</Description>
+      <AddressString>PlantsVsZombies.exe+5F6E9</AddressString>
+      <Before>
+        <Byte>FD</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>84</Byte>
+        <Byte>C0</Byte>
+      </Before>
+      <Actual>
+        <Byte>74</Byte>
+        <Byte>27</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>05</Byte>
+        <Byte>F0</Byte>
+        <Byte>96</Byte>
+        <Byte>67</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F8ED</Description>
+      <AddressString>PlantsVsZombies.exe+5F8E7</AddressString>
+      <Before>
+        <Byte>EB</Byte>
+        <Byte>38</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1C</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>04</Byte>
+      </Actual>
+      <After>
+        <Byte>6A</Byte>
+        <Byte>01</Byte>
+        <Byte>EB</Byte>
+        <Byte>24</Byte>
+        <Byte>83</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5F97A</Description>
+      <AddressString>PlantsVsZombies.exe+5F94B</AddressString>
+      <Before>
+        <Byte>74</Byte>
+        <Byte>25</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1C</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>2D</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>4E</Byte>
+        <Byte>1C</Byte>
+        <Byte>6A</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+6335C</Description>
+      <AddressString>PlantsVsZombies.exe+6334E</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>83</Byte>
+        <Byte>F9</Byte>
+        <Byte>1A</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>0C</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>C7</Byte>
+        <Byte>E8</Byte>
+        <Byte>99</Byte>
+        <Byte>DE</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 jne PlantsVsZombies.exe+5E066</Description>
+      <AddressString>PlantsVsZombies.exe+5DF87</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>1C</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>85</Byte>
+        <Byte>D9</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>05</Byte>
+        <Byte>08</Byte>
+        <Byte>95</Byte>
+        <Byte>67</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>替换了 je PlantsVsZombies.exe+5E68F</Description>
+      <AddressString>PlantsVsZombies.exe+5DF5A</AddressString>
+      <Before>
+        <Byte>07</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>85</Byte>
+        <Byte>C0</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>84</Byte>
+        <Byte>2F</Byte>
+        <Byte>07</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>83</Byte>
+        <Byte>F8</Byte>
+        <Byte>05</Byte>
+        <Byte>0F</Byte>
+        <Byte>84</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>run</Name>
+      <Address>00940000</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>main</Name>
+      <Address>00BA0000</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>CreateSun</Name>
+      <Address>008C0000</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+  <LuaScript>--TRAINERGENERATORSTART--
+--This is autogenerated code. Changing code in this block will
+--get erased and rewritten if you regenerate the trainer code
+
+--Uncomment the following line if this is a Cheat Table format trainer and you don't want CE to show (Tip, save as .CETRAINER alternatively)
+--hideAllCEWindows()
+
+RequiredCEVersion=7.4
+if (getCEVersion==nil) or (getCEVersion()&lt;RequiredCEVersion) then
+  messageDialog('Please install Cheat Engine '..RequiredCEVersion, mtError, mbOK)
+  closeCE()
+end
+addresslist=getAddressList()
+memrec82=addresslist.getMemoryRecordByID(82)
+memrec0=addresslist.getMemoryRecordByID(0)
+memrec135=addresslist.getMemoryRecordByID(135)
+memrec138=addresslist.getMemoryRecordByID(138)
+memrec139=addresslist.getMemoryRecordByID(139)
+memrec141=addresslist.getMemoryRecordByID(141)
+memrec143=addresslist.getMemoryRecordByID(143)
+
+memrec82_hotkey0=memrec82.getHotkeyByID(0)
+memrec0_hotkey0=memrec0.getHotkeyByID(0)
+memrec135_hotkey0=memrec135.getHotkeyByID(0)
+memrec138_hotkey0=memrec138.getHotkeyByID(0)
+memrec139_hotkey0=memrec139.getHotkeyByID(0)
+memrec141_hotkey0=memrec141.getHotkeyByID(0)
+memrec143_hotkey0=memrec143.getHotkeyByID(0)
+
+function onPostHotkey0(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT0.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec82_hotkey0.onPostHotkey=onPostHotkey0
+
+function onPostHotkey1(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT1.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec0_hotkey0.onPostHotkey=onPostHotkey1
+
+function onPostHotkey2(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT2.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec135_hotkey0.onPostHotkey=onPostHotkey2
+
+function onPostHotkey3(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT3.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec138_hotkey0.onPostHotkey=onPostHotkey3
+
+function onPostHotkey4(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT4.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec139_hotkey0.onPostHotkey=onPostHotkey4
+
+function onPostHotkey5(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT5.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec141_hotkey0.onPostHotkey=onPostHotkey5
+
+function onPostHotkey6(Hotkey)
+  --Executed after the "toggle*" cheat got executed
+  local memrec=Hotkey.Owner
+  local isActive=memrec.Active --get the state after the hotkey got triggered
+  CETrainer.CHEAT6.setActive(isActive) --gui update, nothing else
+  if gPlaySoundOnAction then
+    if isActive then
+      playSound(gActivateSound)
+    else
+      playSound(gDeactivateSound)
+    end
+  end
+end
+
+memrec143_hotkey0.onPostHotkey=onPostHotkey6
+
+CETrainer.SEPERATOR.Visible=false
+
+getAutoAttachList().add("PlantsVsZombies.exe")
+gPlaySoundOnAction=false
+CETrainer.fixDPI() --remove this if you have already taken care of DPI issues yourself
+CETrainer.show()
+function AboutClick()
+  showMessage(gAboutText)
+end
+gAboutText=[[Trainer for more features.
+Suggested to toggle all.]]
+
+function CloseClick()
+  --called by the close button onClick event, and when closing the form
+  closeCE()
+  return caFree --onClick doesn't care, but onClose would like a result
+end
+
+--TRAINERGENERATORSTOP--
+</LuaScript>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+5F720</Address>
+      <Comment>ebp-&gt;杨桃指针
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+5F735</Address>
+      <Comment>edi-&gt;杨桃指针
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+5F7D2</Address>
+      <Comment>eax-&gt;杨桃行数[关键到是否能打到僵尸]
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+5F7FC</Address>
+      <Comment>发射子弹ID
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+5F806</Address>
+      <Comment>发射五角星的中心位置
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>02D00009</Address>
+      <Comment>eax-&gt;子弹指针
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>02D0000F</Address>
+      <Comment>置子弹击中目标的条件
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>02D00016</Address>
+      <Comment>edi-&gt;发射子弹的植物图像X
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>02D00019</Address>
+      <Comment>esi-&gt;发射子弹的植物图像Y
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>05FB0033</Address>
+      <Comment>x
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>05FB0034</Address>
+      <Comment>y
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>
