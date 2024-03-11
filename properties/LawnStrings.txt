@@ -194,7 +194,7 @@ Removes helmets and other metal objects from zombies
 Cabbage-pult
 
 [CABBAGE_PULT_TOOLTIP]
-Hurls cabbages at the enemy
+Hurls at the enemy
 
 [FLOWER_POT]
 Flower Pot
@@ -701,7 +701,7 @@ Magnet-shrooms remove helmets and other metal objects from zombies.
 not sure if he can handle that kind of responsibility.
 
 [CABBAGE_PULT_DESCRIPTION]
-Cabbage-pults hurl cabbages at the enemy.
+Cabbage-pults hurl at the enemy.
 {SHORTLINE}
 {KEYWORD}Damage:{STAT} normal
 {KEYWORD}Range:{STAT} lobbed
@@ -872,12 +872,11 @@ Flag Zombie marks the arrival of a huge pile or "wave" of zombies.
 up a fascination with flags. Maybe it's because the flags always have brains on them. Hard to say.
 
 [CONEHEAD_ZOMBIE_DESCRIPTION]
-His traffic cone headpiece makes him twice as tough as normal zombies.
+His traffic cone headpiece makes him strong.
 {SHORTLINE}
 {KEYWORD}Toughness:{STAT} medium {640}
 {SHORTLINE}
-{FLAVOR}Conehead Zombie shuffled mindlessly forward like every other zombie.
-But something made him stop, made him pick up a traffic cone and stick it on his head. Oh yeah. He likes to party.
+{FLAVOR}Cannons? Brains? Whatever, he's a Conehead Zombie.
 
 [BUCKETHEAD_ZOMBIE_DESCRIPTION]
 His bucket hat makes him extremely resistant to damage.
@@ -901,7 +900,7 @@ normal into greatness. That's Pole Vaulting Zombie right there. That is so him.
 [NEWSPAPER_ZOMBIE_DESCRIPTION]
 His newspaper provides limited defense.
 {SHORTLINE}
-{KEYWORD}Toughness:{STAT} low {270}
+{KEYWORD}Toughness:{STAT} high {270}
 {KEYWORD}Newspaper Toughness:{STAT} low {150}
 {KEYWORD}Speed:{STAT} normal, then fast (after losing newspaper)
 {SHORTLINE}
@@ -1517,7 +1516,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v1.7
+IE v1.8
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
