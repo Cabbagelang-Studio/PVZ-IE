@@ -67,3 +67,7 @@ ___
 # Update 3/11/2024
 
 - Made more features
+
+# Update 3/12/2024
+
+- Fixed some bugs
