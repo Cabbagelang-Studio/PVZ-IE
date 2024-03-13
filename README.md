@@ -71,3 +71,7 @@ ___
 # Update 3/12/2024
 
 - Fixed some bugs
+
+# Update 3/13/2024
+
+- Increased plants' damage

@@ -904,7 +904,7 @@ His newspaper provides limited defense.
 {KEYWORD}Newspaper Toughness:{STAT} low {150}
 {KEYWORD}Speed:{STAT} normal, then fast (after losing newspaper)
 {SHORTLINE}
-{FLAVOR}Newspaper Zombie was *this* close to finishing his sudoku puzzle. No wonder he's freaking out.
+{FLAVOR}Newspaper Torn, Fear gone!
 
 [SCREEN_DOOR_ZOMBIE_DESCRIPTION]
 His screen door is an effective shield.
@@ -1516,7 +1516,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v1.9
+IE v2.0
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
