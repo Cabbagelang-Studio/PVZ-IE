@@ -75,3 +75,7 @@ ___
 # Update 3/13/2024
 
 - Increased plants' damage
+
+# Update 3/14/2024
+
+- Added Adventure 6-X
