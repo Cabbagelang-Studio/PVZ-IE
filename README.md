@@ -79,3 +79,11 @@ ___
 # Update 3/14/2024
 
 - Added Adventure 6-X
+
+# Update 3/16/2024
+
+- Removed Adventure 6-X
+
+- Removed Boss
+
+- Combined PVZ-IE+ with Main Executable
