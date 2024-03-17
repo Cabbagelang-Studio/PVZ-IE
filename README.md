@@ -91,3 +91,5 @@ ___
 # Update 3/17/2024
 
 - Added Adventure 6-X again
+
+- Changed Spawnings
