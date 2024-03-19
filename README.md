@@ -93,3 +93,7 @@ ___
 - Added Adventure 6-X again
 
 - Changed Spawnings
+
+# Update 3/19/2024
+
+- Thorns plants
