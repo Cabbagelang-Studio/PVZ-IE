@@ -271,7 +271,7 @@ Does heavy damage and slows groups of zombies
 Gold Magnet
 
 [GOLD_MAGNET_TOOLTIP]
-Collects coins and diamonds for you
+Increases sun when there're coins
 (requires magnet-shroom)
 
 [SPIKEROCK]
@@ -823,7 +823,7 @@ Winter Melons do heavy damage and slow groups of zombies.
 {FLAVOR}Winter Melon tries to calm his nerves. He hears the zombies approach. Will he make it? Will anyone make it?
 
 [GOLD_MAGNET_DESCRIPTION]
-Gold Magnets collect coins and diamonds for you.
+Gold Magnet increases sun when there're coins.
 {SHORTLINE}
 {KEYWORD}Must be planted on magnet-shrooms
 {SHORTLINE}
@@ -1516,7 +1516,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v3.3
+IE v3.4
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!

@@ -97,3 +97,9 @@ ___
 # Update 3/19/2024
 
 - Thorns plants
+
+# Update 3/22/2024
+
+- Thorns Wall-nut (60), Tall-nut (120), Pumpkin (60), Cactus (600)
+
+- Strong Gold-Magnet
