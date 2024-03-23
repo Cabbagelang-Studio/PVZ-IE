@@ -103,3 +103,7 @@ ___
 - Thorns Wall-nut (60), Tall-nut (120), Pumpkin (60), Cactus (600)
 
 - Strong Gold-Magnet
+
+# Update 3/23/2024
+
+- Strong Scaredy-shroom

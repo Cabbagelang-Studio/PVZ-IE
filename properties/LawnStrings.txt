@@ -1516,7 +1516,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v3.4
+IE v3.5
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
