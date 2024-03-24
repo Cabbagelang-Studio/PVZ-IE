@@ -107,3 +107,7 @@ ___
 # Update 3/23/2024
 
 - Strong Scaredy-shroom
+
+# Update 3/24/2024
+
+- Fixed bugs about Cabbage-Pult
