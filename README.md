@@ -104,10 +104,10 @@ ___
 
 - Strong Gold-Magnet
 
-# Update 3/23/2024
+# Udpdate 3/27/2024
 
-- Strong Scaredy-shroom
+- Version rollback
 
-# Update 3/24/2024
+- Stronger Magnet-shroom
 
-- Fixed bugs about Cabbage-Pult
+- Stronger Scaredy-shroom
