@@ -25,6 +25,10 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Adventure 6-X
 - Thorns Plants
 - Strong Gold-Magnet
+- Peashooter Zombie with Bucket
+- Gatlin Zombie with Bucket
+- Bucket Zombie dies with Grave
+- Screen Door Zombie dies with Grave
 
 ## Why isn't it open source?
 Modified from assembly.
