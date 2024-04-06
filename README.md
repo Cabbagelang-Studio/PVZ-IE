@@ -25,8 +25,6 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Adventure 6-X
 - Thorns Plants
 - Strong Gold-Magnet
-- Bucket peashooter/gatlin zombie
-- Bucket zombie die with grave (33.4% chance)
 
 ## Why isn't it open source?
 Modified from assembly.
