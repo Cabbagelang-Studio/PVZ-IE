@@ -29,6 +29,8 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Bucket zombie die with grave (33.4% chance)
 - Graves Gargantuar
 - Bungees Football Zombies
+- Fire Zombies!
+- Plants Skills!
 
 ## Why isn't it open source?
 Modified from assembly.
