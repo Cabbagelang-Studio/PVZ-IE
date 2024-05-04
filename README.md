@@ -32,5 +32,23 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Fire Zombies!
 - Plants Skills!
 
+### Update v3.17
+
+- Fixed bugs about Platern
+
+- Fire Starfruit
+
+- Better Fume-shroom
+
+- Stronger Chomper
+
+### Update v3.16
+
+- Fixed some bugs
+
+- Skill for Platern
+
+- Water zombies
+
 ## Why isn't it open source?
 Modified from assembly.
