@@ -32,6 +32,14 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Fire Zombies!
 - Plants Skills!
 
+### Update v3.19
+
+- Water zombies back
+
+- Title
+
+- Adventure 7-X
+
 ### Update v3.18
 
 - Fixed some bugs

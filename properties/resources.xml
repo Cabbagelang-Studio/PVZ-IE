@@ -5,7 +5,8 @@
   <SetDefaults path="images" idprefix="IMAGE_" />
   <Image id="BLANK" path="blank" />
   <Image id="POPCAP_LOGO" path="PopCap_Logo" />
-  
+  <Image id="BACKGROUND7" path="background7"/>
+  <Image id="BACKGROUND7_GAMEOVER_MASK" path="background7_gameover_mask"/>
   <SetDefaults path="properties" idprefix="IMAGE_" />
   <Image id="PARTNER_LOGO" path="partner_logo" />
 </Resources>
