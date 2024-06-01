@@ -1516,7 +1516,7 @@ Hey neighbor! Got some new items for sale!
 {NO_CLICK}To use Wall-nut First Aid, simply plant a fresh new Wall-nut over the damaged one!
 
 [MENU_BUTTON]
-IE v3.20
+IE v3.21
 
 [ADVICE_MORE_ZOMBIES]
 More zombies approaching!
@@ -3057,3 +3057,9 @@ Replay level?
 
 [REPLAY_LEVEL_BODY]
 Do you wish to replay level 3-4?
+
+[GIANT_WALLNUT_TOOLTIP]
+Blocks zombies with ultimate defence
+
+[SPROUT_TOOLTIP]
+Freeze zombies on contact

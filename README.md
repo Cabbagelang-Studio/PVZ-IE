@@ -32,6 +32,24 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Fire Zombies!
 - Plants Skills!
 
+### Update v3.21
+
+- Fixed some bugs
+
+- Gatlin gargantuar
+
+- Stronger newspaper zombie
+
+- Plants HP shown
+
+- Show zombie HP on right click
+
+- Fire Peashooters
+
+- Ice Fume-shroom/Gloom-shroom
+
+- **New plants**
+
 ### Update v3.20
 
 - Fixed some bugs
