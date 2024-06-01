@@ -32,6 +32,10 @@ This is a modified edition for PVZ. Made by Cabbagelang Studio.
 - Fire Zombies!
 - Plants Skills!
 
+### Update v3.23
+
+- Bugfix
+
 ### Update v3.22
 
 - Fixed some bugs
