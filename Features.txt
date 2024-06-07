@@ -61,6 +61,7 @@ Plants: * means skilled
 	Magnet-shroom:
 		fullscreen scope
 		shorter waiting time
+		damages zomboss/zomboni
 	Cabbage-pult:
 		random bullets (INCLUDING CANNONS)
 		* explodes when dying
@@ -108,6 +109,8 @@ Zombies: * means variants
 		jump infinitely
 	Buckethead Zombie:
 		dies with graves
+		* Imitator Zombie:
+			generates random zombie when dying
 	Newspaper Zombie:
 		newspaper provides extreme defence
 		almost unkillable when his newspaper is dropping
@@ -175,8 +178,9 @@ Adventur 7-X:
 	O O O O I O O O O
 	Yeti Zombies will not go back
 Other:
-	Press "1" for normal plants
-	Press "2" for skilled plants
+	Press "w" to toggle skilled plants
+	Press "q" for shovel
+	Press <1-0> for plants
 	Right click to show zombies' hp
 	Graves every level
 	Small Sun: 25
