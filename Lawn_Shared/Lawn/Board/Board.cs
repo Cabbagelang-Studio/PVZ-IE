@@ -4292,7 +4292,7 @@ namespace Lawn
                 {
                     mApp.PlayFoley(FoleyType.UseShovel);
                     mPlantsShoveled++;
-                    plant.Die();
+                    plant.Die(false);
                     if (plant.mSeedType == SeedType.Cattail && GetTopPlantAt(plant.mPlantCol, plant.mRow, TopPlant.OnlyPumpkin) != null)
                     {
                         NewPlant(plant.mPlantCol, plant.mRow, SeedType.Lilypad, SeedType.None);
@@ -5804,7 +5804,7 @@ namespace Lawn
             zombiesInRow.Add(aZombie);
         }
 
-        public Zombie AddZombieInRow(ZombieType theZombieType, int theRow, int theFromWave)
+        public Zombie AddZombieInRow(ZombieType theZombieType, int theRow, int theFromWave, ZombieMutation mutation=ZombieMutation.None)
         {
             if (mZombies.Count >= mZombies.Capacity - 1)
             {
@@ -5816,7 +5816,7 @@ namespace Lawn
                 theVariant = true;
             }
             Zombie newZombie = Zombie.GetNewZombie();
-            newZombie.ZombieInitialize(theRow, theZombieType, theVariant, null, theFromWave);
+            newZombie.ZombieInitialize(theRow, theZombieType, theVariant, null, theFromWave,mutation);
             AddToZombieList(newZombie);
             if (theZombieType == ZombieType.Bobsled && newZombie.IsOnBoard())
             {
@@ -5826,9 +5826,9 @@ namespace Lawn
                 AddToZombieList(newZombie2, theRow);
                 AddToZombieList(newZombie3, theRow);
                 AddToZombieList(newZombie4, theRow);
-                newZombie2.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave);
-                newZombie3.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave);
-                newZombie4.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave);
+                newZombie2.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave,mutation);
+                newZombie3.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave,mutation);
+                newZombie4.ZombieInitialize(theRow, ZombieType.Bobsled, false, newZombie, theFromWave,mutation);
             }
             return newZombie;
         }
@@ -5870,11 +5870,15 @@ namespace Lawn
             }
             else if (mApp.mGameMode == GameMode.ChallengeWhackAZombie)
             {
-                mNumWaves = 12;
+                mNumWaves = 10;
             }
-            else if (mApp.mGameMode == GameMode.ChallengeWallnutBowling || mApp.mGameMode == GameMode.ChallengeAirRaid || mApp.mGameMode == GameMode.ChallengeGraveDanger || mApp.mGameMode == GameMode.ChallengeHighGravity || mApp.mGameMode == GameMode.ChallengePortalCombat || mApp.mGameMode == GameMode.ChallengeWarAndPeas || mApp.mGameMode == GameMode.ChallengeInvisighoul)
+            else if (mApp.mGameMode == GameMode.ChallengeAirRaid || mApp.mGameMode == GameMode.ChallengeGraveDanger || mApp.mGameMode == GameMode.ChallengeHighGravity || mApp.mGameMode == GameMode.ChallengePortalCombat || mApp.mGameMode == GameMode.ChallengeWarAndPeas || mApp.mGameMode == GameMode.ChallengeInvisighoul)
             {
                 mNumWaves = 20;
+            }
+            else if (mApp.mGameMode == GameMode.ChallengeWallnutBowling)
+            {
+                mNumWaves = 15;
             }
             else if (mApp.IsStormyNightLevel() || mApp.IsLittleTroubleLevel() || mApp.IsBungeeBlitzLevel() || mApp.mGameMode == GameMode.ChallengeColumn || mApp.IsShovelLevel() || mApp.mGameMode == GameMode.ChallengeWarAndPeas2 || mApp.mGameMode == GameMode.ChallengeWallnutBowling2 || mApp.mGameMode == GameMode.ChallengePogoParty)
             {
@@ -7963,7 +7967,14 @@ namespace Lawn
                         bool flag = zombie.IsDeadOrDying();
                         if (theBurn)
                         {
-                            zombie.ApplyBurn();
+                            if(zombie.mZombieType==ZombieType.Dancer){
+                                //do nothing
+                            }else if(zombie.mZombieType==ZombieType.Newspaper && zombie.mZombiePhase!=ZombiePhase.NewspaperMad){
+                                zombie.TakeDamage(1800, 18U);
+                            }else{
+                                zombie.ApplyBurn();
+                            }
+
                         }
                         else
                         {

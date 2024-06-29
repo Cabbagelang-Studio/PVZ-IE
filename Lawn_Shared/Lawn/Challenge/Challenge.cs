@@ -2817,22 +2817,22 @@ namespace Lawn
             else if (mApp.mGameMode == GameMode.ChallengeWallnutBowling2)
             {
                 Challenge.aSeedPickArray[num2].mItem = 3;
-                Challenge.aSeedPickArray[num2].mWeight = 85;
+                Challenge.aSeedPickArray[num2].mWeight = 60;
                 num2++;
                 Challenge.aSeedPickArray[num2].mItem = 49;
-                Challenge.aSeedPickArray[num2].mWeight = 15;
+                Challenge.aSeedPickArray[num2].mWeight = 20;
                 num2++;
                 Challenge.aSeedPickArray[num2].mItem = 50;
-                Challenge.aSeedPickArray[num2].mWeight = 15;
+                Challenge.aSeedPickArray[num2].mWeight = 20;
                 num2++;
             }
             else if (mApp.IsWallnutBowlingLevel())
             {
                 Challenge.aSeedPickArray[num2].mItem = 3;
-                Challenge.aSeedPickArray[num2].mWeight = 85;
+                Challenge.aSeedPickArray[num2].mWeight = 60;
                 num2++;
                 Challenge.aSeedPickArray[num2].mItem = 49;
-                Challenge.aSeedPickArray[num2].mWeight = 15;
+                Challenge.aSeedPickArray[num2].mWeight = 40;
                 num2++;
             }
             else if (mApp.IsLittleTroubleLevel())

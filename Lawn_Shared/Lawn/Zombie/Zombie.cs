@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Sexy;
@@ -94,6 +94,7 @@ namespace Lawn
             mZombieAttackRect = default(TRect);
             mChilledCounter = 0;
             mButteredCounter = 0;
+            mQuestioningCounter = 0;
             mIceTrapCounter = 0;
             mMindControlled = false;
             mBlowingAway = false;
@@ -151,6 +152,7 @@ namespace Lawn
             mHasHead = true;
             mHasHelm = true;
             mHasShield = true;
+            mMutationType = ZombieMutation.None;
         }
 
         int IComparable.CompareTo(object toCompare)
@@ -159,7 +161,7 @@ namespace Lawn
             return mX.CompareTo(zombie.mX);
         }
 
-        public void ZombieInitialize(int theRow, ZombieType theType, bool theVariant, Zombie theParentZombie, int theFromWave)
+        public void ZombieInitialize(int theRow, ZombieType theType, bool theVariant, Zombie theParentZombie, int theFromWave, ZombieMutation mutation=ZombieMutation.None)
         {
             Debug.ASSERT(theType >= ZombieType.Normal && theType < ZombieType.ZombieTypesCount);
             mRow = theRow;
@@ -182,6 +184,7 @@ namespace Lawn
             mChilledCounter = 0;
             mIceTrapCounter = 0;
             mButteredCounter = 0;
+            mQuestioningCounter = 0;
             mMindControlled = false;
             mBlowingAway = false;
             mHasHead = true;
@@ -254,18 +257,99 @@ namespace Lawn
             }
             switch (mZombieType)
             {
-            case ZombieType.Normal:
+            case ZombieType.Normal:{
                 LoadPlainZombieReanim();
+                if(TodCommon.RandRangeInt(0,1)==0 || mutation==ZombieMutation.Fireball || mutation==ZombieMutation.Hypno){
+                    if(mutation!=ZombieMutation.Hypno&&TodCommon.RandRangeInt(0,1)==0||mutation==ZombieMutation.Fireball){
+                        mMutationType=ZombieMutation.Fireball;
+                        ReanimShowPrefix("anim_bucket", 0);
+                        ReanimShowPrefix("anim_hair", -1);
+                        ReanimShowPrefix("anim_head2",-1);
+                        mHelmType = HelmType.Pail;
+                        mHelmHealth = 1100;
+                        Reanimation aBodyReanim = mApp.ReanimationGet(mBodyReanimID);
+                        if (IsOnBoard())
+                        {
+                            aBodyReanim.SetFramesForLayer(GlobalMembersReanimIds.ReanimTrackId_anim_walk2);
+                        }
+                        ReanimatorTrackInstance aTrackInstance = aBodyReanim.GetTrackInstanceByName(GlobalMembersReanimIds.ReanimTrackId_anim_head1);
+                        aTrackInstance.mImageOverride = AtlasResources.IMAGE_BLANK;
+                        Reanimation aFireballHeadReanim = mApp.AddReanimation(0f, 0f, 0, ReanimationType.FirePea);
+                        aFireballHeadReanim.PlayReanim(GlobalMembersReanimIds.ReanimTrackId_anim_head_idle, ReanimLoopType.Loop, 0, 15f);
+                        mSpecialHeadReanimID = mApp.ReanimationGetID(aFireballHeadReanim);
+                        AttachEffect aAttachEffect = GlobalMembersAttachment.AttachReanim(ref aTrackInstance.mAttachmentID, aFireballHeadReanim, 0f, 0f);
+                        aBodyReanim.mFrameBasePose = 0;
+                        TodCommon.TodScaleRotateTransformMatrix(ref aAttachEffect.mOffset.mMatrix, 65f * Constants.S, -8f * Constants.S, 0.2f, -1f, 1f);
+                        mPhaseCounter = 150;
+                        mVariant = false;
+                    }else{
+                        mMutationType=ZombieMutation.Hypno;
+                        ReanimShowPrefix("anim_bucket", 0);
+                        ReanimShowPrefix("anim_hair", -1);
+                        ReanimShowPrefix("anim_head2",-1);
+                        mHelmType = HelmType.Pail;
+                        mHelmHealth = 1100;
+                        Reanimation aBodyReanim = mApp.ReanimationGet(mBodyReanimID);
+                        if (IsOnBoard())
+                        {
+                            aBodyReanim.SetFramesForLayer(GlobalMembersReanimIds.ReanimTrackId_anim_walk2);
+                        }
+                        ReanimatorTrackInstance aTrackInstance = aBodyReanim.GetTrackInstanceByName(GlobalMembersReanimIds.ReanimTrackId_anim_head1);
+                        aTrackInstance.mImageOverride = AtlasResources.IMAGE_BLANK;
+                        Reanimation aHypnoHeadReanim = mApp.AddReanimation(0f, 0f, 0, ReanimationType.Hypnoshroom);
+                        aHypnoHeadReanim.PlayReanim(GlobalMembersReanimIds.ReanimTrackId_anim_head_idle, ReanimLoopType.Loop, 0, 15f);
+                        mSpecialHeadReanimID = mApp.ReanimationGetID(aHypnoHeadReanim);
+                        AttachEffect aAttachEffect = GlobalMembersAttachment.AttachReanim(ref aTrackInstance.mAttachmentID, aHypnoHeadReanim, 0f, 0f);
+                        aBodyReanim.mFrameBasePose = 0;
+                        TodCommon.TodScaleRotateTransformMatrix(ref aAttachEffect.mOffset.mMatrix, 65f * Constants.S, -8f * Constants.S, 0.2f, -1f, 1f);
+                        mPhaseCounter = 150;
+                        mVariant = false;
+                    }
+                }
                 break;
+            }
             case ZombieType.DuckyTube:
                 LoadPlainZombieReanim();
                 break;
             case ZombieType.TrafficCone:
-                LoadPlainZombieReanim();
-                ReanimShowPrefix("anim_cone", 0);
-                ReanimShowPrefix("anim_hair", -1);
                 mHelmType = HelmType.TrafficCone;
                 mHelmHealth = 370;
+                if(TodCommon.RandRangeInt(0,9)==0 || mutation==ZombieMutation.Cannon){
+                    LoadPlainZombieReanim();
+                    ReanimShowPrefix("anim_cone", 0);
+                    ReanimShowPrefix("anim_hair", -1);
+                    ReanimShowPrefix("anim_head2",-1);
+                    mMutationType=ZombieMutation.Cannon;
+                    Reanimation aBodyReanim = mApp.ReanimationGet(mBodyReanimID);
+                    if (IsOnBoard())
+                    {
+                        aBodyReanim.SetFramesForLayer(GlobalMembersReanimIds.ReanimTrackId_anim_walk2);
+                    }
+                    ReanimatorTrackInstance aTrackInstance = aBodyReanim.GetTrackInstanceByName(GlobalMembersReanimIds.ReanimTrackId_anim_head1);
+                    aTrackInstance.mImageOverride = AtlasResources.IMAGE_BLANK;
+                    Reanimation aCannonHeadReanim = mApp.AddReanimation(0f, 0f, 0, ReanimationType.Cobcannon);
+                    aCannonHeadReanim.PlayReanim(GlobalMembersReanimIds.ReanimTrackId_anim_head_idle, ReanimLoopType.Loop, 0, 15f);
+                    mSpecialHeadReanimID = mApp.ReanimationGetID(aCannonHeadReanim);
+                    AttachEffect aAttachEffect = GlobalMembersAttachment.AttachReanim(ref aTrackInstance.mAttachmentID, aCannonHeadReanim, 0f, 0f);
+                    aBodyReanim.mFrameBasePose = 0;
+                    TodCommon.TodScaleRotateTransformMatrix(ref aAttachEffect.mOffset.mMatrix, 65f * Constants.S, -8f * Constants.S, 0.2f, -1f, 1f);
+                    mPhaseCounter = 150;
+                    mVariant = false;
+                    mVelX=2.0f;
+                    mPosX += 200f;
+                }else{    
+                    ReanimShowPrefix("anim_cone", 0);
+                    ReanimShowPrefix("anim_hair", -1);
+                    int door=TodCommon.RandRangeInt(0,1);
+                    if(door==1){
+                        mShieldType = ShieldType.Door;
+                        mShieldHealth = 370;
+                        mPosX += 60f;
+                        mVariant=false;
+                    }
+                    LoadPlainZombieReanim();
+                    if(door==1){AttachShield();}
+                }
                 break;
             case ZombieType.Pail:
                 LoadPlainZombieReanim();
@@ -276,9 +360,13 @@ namespace Lawn
                 break;
             case ZombieType.Door:
                 mShieldType = ShieldType.Door;
-                mShieldHealth = 1100;
+                mShieldHealth = 3000;
+                mHelmType = HelmType.Pail;
+                mHelmHealth = 2000;
                 mPosX += 60f;
                 LoadPlainZombieReanim();
+                ReanimShowPrefix("anim_bucket", 0);
+                ReanimShowPrefix("anim_hair", -1);
                 AttachShield();
                 break;
             case ZombieType.Yeti:
@@ -302,7 +390,7 @@ namespace Lawn
                 break;
             case ZombieType.Bungee:
             {
-                mBodyHealth = 450;
+                mBodyHealth = 3000;
                 mAnimFrames = 4;
                 mAltitude = GameConstants.BUNGEE_ZOMBIE_HEIGHT + TodCommon.RandRangeInt(0, 150);
                 mVelX = 0f;
@@ -318,7 +406,7 @@ namespace Lawn
                 else
                 {
                     mZombiePhase = ZombiePhase.BungeeCutscene;
-                    mPhaseCounter = TodCommon.RandRangeInt(0, 200);
+                    mPhaseCounter = TodCommon.RandRangeInt(0, 50);
                 }
                 PlayZombieReanim(ref GlobalMembersReanimIds.ReanimTrackId_anim_drop, ReanimLoopType.Loop, 0, 24f);
                 Reanimation aBodyReanim = mApp.ReanimationGet(mBodyReanimID);
@@ -339,7 +427,8 @@ namespace Lawn
                 mZombieRect = new TRect(50, 0, 57, 115);
                 ReanimShowPrefix("anim_hair", -1);
                 mHelmType = HelmType.Football;
-                mHelmHealth = 1400;
+                mHelmHealth = 2000;
+                mBodyHealth = 1800;
                 mAnimTicksPerFrame = 6;
                 mVariant = false;
                 break;
@@ -638,7 +727,7 @@ namespace Lawn
                 else
                 {
                     mZombiePhase = ZombiePhase.DancerDancingIn;
-                    mPhaseCounter = 200 + RandomNumbers.NextNumber(12);
+                    mPhaseCounter = 600 + RandomNumbers.NextNumber(12);
                     mVelX = 0.5f;
                     PlayZombieReanim(ref GlobalMembersReanimIds.ReanimTrackId_anim_moonwalk, ReanimLoopType.Loop, 0, 24f);
                 }
@@ -1031,6 +1120,9 @@ namespace Lawn
         public void EatZombie(Zombie theZombie)//3update
         {
             theZombie.TakeDamage(GameConstants.TICKS_BETWEEN_EATS, 9U);
+            if(mZombiePhase==ZombiePhase.NewspaperMad){
+                theZombie.TakeDamage(GameConstants.TICKS_BETWEEN_EATS*3, 9U);
+            }
             StartEating();
             if (theZombie.mBodyHealth <= 0)
             {
@@ -1040,6 +1132,107 @@ namespace Lawn
 
         public void EatPlant(Plant thePlant)//3update
         {
+            if(thePlant.mSeedType==SeedType.Wallnut&&thePlant.mMutated&&mZombieType!=ZombieType.Newspaper){
+                mPosX+=32;
+                AddAttachedReanim(-11,0,ReanimationType.ZombieSurprise);
+                mQuestioningCounter=100;
+            }if(thePlant.mSeedType==SeedType.Potatomine&&thePlant.mState==PlantState.PotatoArmed){
+                goto MutatedZombieSkillImmunation;
+            }
+            if(mMutationType==ZombieMutation.Cannon){
+                mApp.PlayFoley(FoleyType.Explosion);
+                    int aPosX = mX + mWidth / 2;
+                    int aPosY = mY + mHeight / 2;
+                    if (mMindControlled)
+                    {
+                        mBoard.KillAllZombiesInRadius(mRow, aPosX, aPosY, Constants.JackInTheBoxZombieRadius, 1, true, 0x7F);
+                    }
+                    else
+                    {
+                        mBoard.KillAllZombiesInRadius(mRow, aPosX, aPosY, Constants.JackInTheBoxZombieRadius, 1, true, 0xFF);
+                        mBoard.KillAllPlantsInRadius(aPosX, aPosY, Constants.JackInTheBoxPlantRadius);
+                    }
+                    mApp.AddTodParticle(aPosX, aPosY, 400000, ParticleEffect.Jackexplode);
+                    mBoard.ShakeBoard(4, -6);
+                    if (mApp.IsScaryPotterLevel())
+                    {
+                        mBoard.mChallenge.ScaryPotterJackExplode(aPosX, aPosY);
+                    }
+            }
+            if(mMutationType==ZombieMutation.Hypno){
+                mDead=true;
+                switch(thePlant.mSeedType){
+                    case SeedType.Peashooter:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.PeaHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Wallnut:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.WallnutHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Snowpea:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.PeaHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Repeater:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.PeaHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Squash:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.SquashHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Threepeater:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.PeaHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Jalapeno:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.JalapenoHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Splitpea:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.PeaHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Tallnut:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.TallnutHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Gatlingpea:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.GatlingHead,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Hypnoshroom:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.Normal,thePlant.mRow,0,ZombieMutation.Hypno);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    case SeedType.Torchwood:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.Normal,thePlant.mRow,0,ZombieMutation.Fireball);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                    default:{
+                        Zombie aZombie=mBoard.AddZombieInRow(ZombieType.Normal,thePlant.mRow,0);
+                        aZombie.mPosX=mBoard.GridToPixelX(thePlant.mPlantCol,thePlant.mRow);
+                        break;
+                    }
+                }
+                thePlant.Die();
+            }
+
+            MutatedZombieSkillImmunation:
+
             if (mZombiePhase == ZombiePhase.DancerDancingIn)
             {
                 mPhaseCounter = 1;
@@ -1100,6 +1293,9 @@ namespace Lawn
                 }
             }
             thePlant.mPlantHealth -= /*3 * */GameConstants.TICKS_BETWEEN_EATS;
+            if (mZombiePhase == ZombiePhase.NewspaperMad){
+                thePlant.mPlantHealth -= GameConstants.TICKS_BETWEEN_EATS*3;
+            }
             thePlant.mRecentlyEatenCountdown = 50;
             if (mApp.IsIZombieLevel() && mJustGotShotCounter < -500 && (thePlant.mSeedType == SeedType.Wallnut || thePlant.mSeedType == SeedType.Tallnut || thePlant.mSeedType == SeedType.Pumpkinshell))
             {
@@ -1402,6 +1598,16 @@ namespace Lawn
 
         public void Update()//3update
         {
+            if(mMutationType==ZombieMutation.Cannon){
+                mVelX=2.0f;
+                UpdateAnimSpeed();
+            }if(mZombiePhase==ZombiePhase.NewspaperMad){
+                mVelX=4.0f;
+                UpdateAnimSpeed();
+            }if(mZombieType==ZombieType.Football){
+                mVelX=1.1f;
+                UpdateAnimSpeed();
+            }
             cachedZombieRectUpToDate = false;
             Debug.ASSERT(!mDead);
             //mZombieAge += 3;
@@ -1452,6 +1658,30 @@ namespace Lawn
                     UpdateZombiePogo();
                 }
                 Animate();
+                if(mMutationType == ZombieMutation.Fireball && mApp.mGameMode != GameMode.ChallengeWallnutBowling && mApp.mGameMode != GameMode.ChallengeWallnutBowling2){
+                    if(IsOnBoard()&&!mDead){
+                        for (int i = 0; i < mBoard.mPlants.Count; i++)
+                            {
+                                Plant aPlant = mBoard.mPlants[i];
+                                if (!aPlant.mDead && mRow == aPlant.mRow)
+                                {
+                                    float aPlantX=mBoard.GridToPixelX(aPlant.mPlantCol,aPlant.mRow);
+                                    if(mPosX>aPlantX&&mPosX-aPlantX<120){
+                                        if(aPlant.mSeedType!=SeedType.Cherrybomb&&
+                                            aPlant.mSeedType!=SeedType.Jalapeno&&
+                                            (aPlant.mIsAsleep||aPlant.mSeedType!=SeedType.Doomshroom)&&
+                                            aPlant.mSeedType!=SeedType.Blover&&
+                                            (aPlant.mIsAsleep||aPlant.mSeedType!=SeedType.Iceshroom)){
+                                            mApp.AddTodParticle(mPosX,mPosY+40,mRenderOrder+2,ParticleEffect.ZombieBossFireball);
+                                            aPlant.Die();
+                                        }else{
+                                            aPlant.mMutated=false;
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
             }
             //mJustGotShotCounter -= 3;
             mJustGotShotCounter--;
@@ -2192,8 +2422,16 @@ namespace Lawn
                 if (flag)
                 {
                     mX = (int)mPosX;
-                    mZombiePhase = ZombiePhase.PolevaulterPostVault;
-                    mZombieAttackRect = new TRect(50, 0, 20, 115);
+                    mZombiePhase = ZombiePhase.PolevaulterPreVault;
+                    //mZombieAttackRect = new TRect(50, 0, 20, 115);    
+                    if (mApp.IsWallnutBowlingLevel())
+                    {
+                        mZombieAttackRect = new TRect(-229, 0, 270, 115);
+                    }
+                    else
+                    {
+                        mZombieAttackRect = new TRect(-29, 0, 70, 115);
+                    }
                     StartWalkAnim(0);
                     return;
                 }
@@ -4833,6 +5071,13 @@ namespace Lawn
                     RemoveButter();
                 }
             }
+            if (mQuestioningCounter > 0)
+            {
+                mQuestioningCounter--;
+                if(mQuestioningCounter<=0){
+                    mQuestioningCounter=0;
+                }
+            }
             if (mZombiePhase == ZombiePhase.RisingFromGrave)
             {
                 UpdateZombieRiseFromGrave();
@@ -4990,6 +5235,9 @@ namespace Lawn
                 if (mZombieType == ZombieType.Polevaulter || mZombieType == ZombieType.Balloon || mZombieType == ZombieType.Imp || mZombieType == ZombieType.Digger || mZombieType == ZombieType.JackInTheBox || mZombieType == ZombieType.Snorkel || mZombieType == ZombieType.Yeti)
                 {
                     ApplyAnimRate(20f);
+                    return;
+                }if (mZombiePhase == ZombiePhase.NewspaperMad){
+                    ApplyAnimRate(144f);
                     return;
                 }
                 ApplyAnimRate(36f);
@@ -5772,6 +6020,11 @@ namespace Lawn
 
         public void TakeBodyDamage(int theDamage, uint theDamageFlags)
         {
+            if(mZombieType==ZombieType.Newspaper && mZombiePhase!=ZombiePhase.NewspaperMad){
+                return;
+            }if(mZombieType==ZombieType.Dancer && mZombiePhase==ZombiePhase.DancerDancingIn){
+                return;
+            }
             if (!TodCommon.TestBit(theDamageFlags, 3))
             {
                 mJustGotShotCounter = 25;
@@ -7335,7 +7588,7 @@ namespace Lawn
 
         public bool IsImmobilizied()
         {
-            return mIceTrapCounter > 0 || mButteredCounter > 0;
+            return mIceTrapCounter > 0 || mButteredCounter > 0 || mQuestioningCounter > 0;
         }
 
         public void ApplyButter()
@@ -10819,6 +11072,8 @@ namespace Lawn
 
         public int mButteredCounter;
 
+        public int mQuestioningCounter;
+
         public int mIceTrapCounter;
 
         public bool mMindControlled;
@@ -10962,6 +11217,8 @@ namespace Lawn
         public bool mHasHelm = true;
 
         public bool mHasShield = true;
+
+        public ZombieMutation mMutationType;
 
         public enum ZombieRenderLayerOffset //Prefix: ZOMBIE_LAYER_OFFSET
         {

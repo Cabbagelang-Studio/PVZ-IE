@@ -101,7 +101,11 @@ namespace Lawn
         public void PlantInitialize(int theGridX, int theGridY, SeedType theSeedType, SeedType theImitaterType)
         {
             if(IsOnBoard()){
-                if((mSeedType==SeedType.Peashooter||mSeedType==SeedType.Sunflower)&&TodCommon.RandRangeInt(0,1)==0){
+                if((mSeedType==SeedType.Peashooter||mSeedType==SeedType.Sunflower||mSeedType==SeedType.Wallnut)&&TodCommon.RandRangeInt(0,1)==0){
+                    mMutated = true;
+                }if(mSeedType==SeedType.Cherrybomb&&TodCommon.RandRangeInt(0,2)!=0){
+                    mMutated = true;
+                }else if(mSeedType==SeedType.Potatomine&&TodCommon.RandRangeInt(0,3)==0){
                     mMutated = true;
                 }
             }
@@ -359,7 +363,8 @@ namespace Lawn
                 if (IsInPlay())
                 {
                     reanimation.AssignRenderGroupToTrack(GlobalMembersReanimIds.ReanimTrackId_anim_glow, -1);
-                    mStateCountdown = 1500;
+                    if(mMutated){mStateCountdown = 0;}
+                    else{mStateCountdown = 1500;}
                 }
                 else
                 {
@@ -930,12 +935,17 @@ namespace Lawn
                         num = mX + mWidth / 2 - 20;
                         num2 = mY + mHeight / 2;
                         mApp.PlaySample(Resources.SOUND_POTATO_MINE);
-                        mBoard.KillAllZombiesInRadius(mRow, num, num2, 60, 0, false, damageRangeFlags);
+                        mBoard.KillAllZombiesInRadius(mRow, num, num2, 115, 1, false, damageRangeFlags);
                         int aRenderOrder = Board.MakeRenderOrder(RenderLayer.Particle, mRow, 0);
                         mApp.AddTodParticle(num + 20f, num2, aRenderOrder, ParticleEffect.PotatoMine);
                         mBoard.ShakeBoard(3, -4);
-                        mApp.Vibrate();
-                        Die();
+                        mApp.Vibrate();   
+                        if(!mMutated){Die();}
+                        else{
+                            if(TodCommon.RandRangeInt(0,3)!=0){
+                                mMutated=false;
+                            }
+                        }
                         return;
                     }
                     if (mSeedType == SeedType.InstantCoffee)
@@ -1436,13 +1446,17 @@ namespace Lawn
             return result;
         }
 
-        public void Die()
+        public void Die(bool notShoveled=true)
         {
             
-            if(IsOnBoard()){
+            if(IsOnBoard()&&notShoveled){
                 if(mSeedType==SeedType.Sunflower && mMutated){
                     Plant bomb=mBoard.AddPlant(mPlantCol,mRow,SeedType.Cherrybomb,SeedType.None);
                     bomb.mMutated=false;
+                }if(mSeedType==SeedType.Cherrybomb && mMutated){
+                    if(mPlantCol<8){
+                        Plant bomb=mBoard.AddPlant(mPlantCol+1,mRow,SeedType.Cherrybomb,SeedType.None);
+                    }
                 }
             }
             if (IsOnBoard() && mSeedType == SeedType.Tanglekelp)
@@ -3186,21 +3200,6 @@ namespace Lawn
                         theImageStrip = AtlasResources.IMAGE_REANIM_ZOMBIE_BUCKET3;
                         num3 = 0.8f;
                     }
-                    else if (magnetItem.mItemType == MagnetItemType.FootballHelmet1)
-                    {
-                        theImageStrip = AtlasResources.IMAGE_REANIM_ZOMBIE_FOOTBALL_HELMET;
-                        num3 = 0.8f;
-                    }
-                    else if (magnetItem.mItemType == MagnetItemType.FootballHelmet2)
-                    {
-                        theImageStrip = AtlasResources.IMAGE_REANIM_ZOMBIE_FOOTBALL_HELMET2;
-                        num3 = 0.8f;
-                    }
-                    else if (magnetItem.mItemType == MagnetItemType.FootballHelmet3)
-                    {
-                        theImageStrip = AtlasResources.IMAGE_REANIM_ZOMBIE_FOOTBALL_HELMET3;
-                        num3 = 0.8f;
-                    }
                     else if (magnetItem.mItemType == MagnetItemType.Door1)
                     {
                         theImageStrip = AtlasResources.IMAGE_REANIM_ZOMBIE_SCREENDOOR1;
@@ -4043,21 +4042,6 @@ namespace Lawn
                 freeMagnetItem.mDestOffsetY = TodCommon.RandRangeFloat(-10f, 10f) + 20f;
                 freeMagnetItem.mItemType = MagnetItemType.Pail1 + helmDamageIndex;
             }
-            else if (theZombie.mHelmType == HelmType.Football)
-            {
-                int helmDamageIndex2 = theZombie.GetHelmDamageIndex();
-                theZombie.mHelmHealth = 0;
-                theZombie.mHelmType = HelmType.None;
-                theZombie.mHasHelm = false;
-                theZombie.GetTrackPosition(ref GlobalMembersReanimIds.ReanimTrackId_zombie_football_helmet, ref freeMagnetItem.mPosX, ref freeMagnetItem.mPosY);
-                theZombie.ReanimShowPrefix("zombie_football_helmet", -1);
-                theZombie.ReanimShowPrefix("anim_hair", 0);
-                freeMagnetItem.mPosX = theZombie.mPosX + 37f;
-                freeMagnetItem.mPosY = theZombie.mPosY - 60f;
-                freeMagnetItem.mDestOffsetX = TodCommon.RandRangeFloat(-10f, 10f) + 20f;
-                freeMagnetItem.mDestOffsetY = TodCommon.RandRangeFloat(-10f, 10f) + 20f;
-                freeMagnetItem.mItemType = MagnetItemType.FootballHelmet1 + helmDamageIndex2;
-            }
             else if (theZombie.mShieldType == ShieldType.Door)
             {
                 int shieldDamageIndex = theZombie.GetShieldDamageIndex();
@@ -4687,6 +4671,20 @@ namespace Lawn
                 }
                 else if(mSeedType==SeedType.Sunflower){
                     SexyColor sexyColor = new SexyColor(255,64,64);
+                    if (sexyColor != reanimation.mColorOverride)
+                    {
+                        flag = true;
+                        reanimation.mColorOverride = sexyColor;
+                    }
+                }else if(mSeedType==SeedType.Wallnut){
+                    SexyColor sexyColor = new SexyColor(128,255,128);
+                    if (sexyColor != reanimation.mColorOverride)
+                    {
+                        flag = true;
+                        reanimation.mColorOverride = sexyColor;
+                    }
+                }else if(mSeedType==SeedType.Potatomine){
+                    SexyColor sexyColor = new SexyColor(255,255,0);
                     if (sexyColor != reanimation.mColorOverride)
                     {
                         flag = true;
